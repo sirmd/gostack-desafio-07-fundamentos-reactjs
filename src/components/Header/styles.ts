@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  page?: string;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -21,6 +22,8 @@ export const Container = styled.div<ContainerProps>`
         color: #fff;
         text-decoration: none;
         font-size: 16px;
+        height: 80px;
+        position: relative;
         transition: opacity 0.2s;
 
         & + a {
@@ -29,6 +32,32 @@ export const Container = styled.div<ContainerProps>`
 
         &:hover {
           opacity: 0.6;
+
+          &:after {
+            content: '';
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #ff872c;
+            top: 33px;
+          }
+        }
+      }
+
+      a.active {
+        font-weight: 600;
+
+        &:after {
+          content: '';
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: #ff872c;
+          top: 33px;
         }
       }
     }
