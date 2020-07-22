@@ -20,9 +20,9 @@
 
 ## Demonstration 📱
 <p align="center">
-  <img width="500" src=".github/listagem.png"/>
-  <img width="500" src=".github/importar.png"/>
-  <img width="500" src=".github/importando.png"/>
+  <img width="250" src=".github/listagem.png"/>
+  <img width="250" src=".github/importar.png"/>
+  <img width="250" src=".github/importando.png"/>
 </p>
 
 ## Knowledges Applied 🚀
